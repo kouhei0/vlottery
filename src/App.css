@@ -1,0 +1,52 @@
+@keyframes Dial-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(190deg);
+  }
+  30% {
+    transform: rotate(180deg);
+  }
+  70% {
+    transform: rotate(180deg);
+  }
+  95% {
+    transform: rotate(370deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes View-shift {
+  from {
+    transform: translateY(-130px);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+
+@keyframes Drop-cap {
+  from {
+    transform: translateY(0px);
+  }
+  96% {
+    transform: translateY(222px);
+  }
+  98% {
+    transform: translateY(218px);
+  }
+  100% {
+    transform: translateY(222px);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

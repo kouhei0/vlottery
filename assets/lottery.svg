@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="100 100 200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="inner-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="3"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="inner-shadow-filter-3" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="5"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+    <filter id="inner-shadow-filter-1" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite operator="out" in="SourceGraphic"/>
+      <feComponentTransfer result="choke">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(0,0,0,0.7)" result="color"/>
+      <feComposite operator="in" in="color" in2="choke" result="shadow"/>
+      <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="filter: url('#inner-shadow-filter-0');">
+    <path style="fill-rule: nonzero; filter: none; fill: rgb(240, 64, 64);" d="M 100 256.669 H 300 V 496 A 4 4 0 0 1 296 500 H 104 A 4 4 0 0 1 100 496 V 256.669 Z"/>
+    <path style="fill-rule: nonzero; filter: none; fill: rgb(240, 64, 64);" d="M 104 100 H 296 A 4 4 0 0 1 300 104 V 113.883 H 100 V 104 A 4 4 0 0 1 104 100 Z"/>
+    <rect style="fill-rule: nonzero; fill: rgb(241, 241, 241);" x="100" y="108.878" width="200" height="155.098" rx="4" ry="4"/>
+  </g>
+  <g id="dial">
+    <ellipse style="filter: url('#inner-shadow-filter-3'); fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0);" cx="199.765" cy="321.534" rx="42.667" ry="42.667"/>
+    <ellipse style="fill: rgb(255, 255, 255); filter: none; stroke: rgb(0, 0, 0);" cx="199.765" cy="321.534" rx="37.242" ry="37.242"/>
+    <rect style="filter: none; fill: rgb(255, 255, 255); stroke: rgb(0, 0, 0);" x="162.523" y="318.434" width="74.484" height="8.763" rx="4" ry="4"/>
+    <path d="M 87.163 162.36 L 89.504 167.043 L 84.821 167.043 L 87.163 162.36 Z" style="stroke: rgb(0, 0, 0); transform-box: fill-box; transform-origin: 50% 50%; fill: rgb(255, 247, 0);" transform="matrix(0, -1, 1, 0, 80.209427, 158.098969)"/>
+  </g>
+  <g>
+    <rect style="fill: rgb(255, 255, 255); mix-blend-mode: screen;" x="111.255" y="122.405" width="9.395" height="9.917" rx="4" ry="4"/>
+    <rect style="fill: rgb(255, 255, 255); mix-blend-mode: screen;" x="111.255" y="138.405" width="9.395" height="68.894" rx="4" ry="4"/>
+  </g>
+  <rect style="fill: rgb(32, 32, 32);" x="153.706" y="379.563" width="91.104" height="91.104" rx="4" ry="4"/>
+  <path style="fill-rule: nonzero; fill: rgb(255, 255, 255); filter: url('#inner-shadow-filter-1');" d="M 153.706 457.084 H 244.81 V 466.667 A 4 4 0 0 1 240.81 470.667 H 157.706 A 4 4 0 0 1 153.706 466.667 V 457.084 Z"/>
+</svg>
