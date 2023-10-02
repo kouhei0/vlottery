@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "author": "Kohei Okuno",
   "license": "MIT",
+  "homepage": "https://kouhei0.github.io/vlottery/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
